@@ -6,7 +6,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const refs = {
   form: document.getElementById(`search-form`),
-  input: document.querySelector('.input-field'),
+  input: document.querySelector('.input-form'),
   loadMoreBtn: document.querySelector(`.load-more`),
   gallery: document.querySelector(`.gallery`),
 };
@@ -65,7 +65,7 @@ async function showSetPictures(event) {
       console.error(error);
     }
   } else {
-    Notiflix.Notify.failure(`Enter a topic to search in the input field! 
+    Notiflix.Notify.failure(`Enter a topic to search in the input field!
         As long as the field is empty, the search will not be activated!`);
     return;
   }

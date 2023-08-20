@@ -1,9 +1,18 @@
-.gallery {
-  margin: 25px;
+body {
+  text-align: center;
+  background: linear-gradient(138.13deg, #22343c 25.87%, #1f2e35 100%);
+  padding: 24px;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
 
+.gallery {
+  padding-top: 70px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: space-between;
 }
 
@@ -17,6 +26,13 @@ img {
   flex-direction: column;
   gap: 14px;
 }
+
+.photo-card:hover,
+.photo-card:focus {
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -26,4 +42,79 @@ img {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.search-form {
+  width: 100%;
+  background: linear-gradient(
+    315deg,
+    #1c2017b3 5%,
+    #0f6043b3 38%,
+    #1c1b1fb3 52%,
+    #7e664ab3 73%
+  );
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.input-form {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  padding: 5px 5px 5px 15px;
+  font-size: 16px;
+}
+.btn {
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #d127e7;
+  font-size: 15px;
+  display: block;
+  text-decoration: none;
+  color: #0e172c;
+  transition: 1.5s;
+  letter-spacing: 5px;
+}
+
+button,
+input {
+  border: 0;
+  padding: 8px;
+  font-family: inherit;
+}
+
+.load-more {
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  color: #000;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 50%;
+  font-size: 16px;
+  font-weight: 600;
+  transform: translate(-50%);
 }
