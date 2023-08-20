@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 const API_KEY = '38947314-3ea86442702c66f116a43faf4';
 const BASE_URL = 'https://pixabay.com/api/';
 
-export async function fetchPics(searchTerm, page, limit = 20) {
+export async function fetchPics(searchTerm, page, limit = 60) {
   const params = {
     key: API_KEY,
     q: searchTerm,

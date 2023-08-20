@@ -87,11 +87,11 @@ img {
 
 .btn:hover,
 .btn:focus {
-  background: #d127e7;
+  background: #707070;
   font-size: 15px;
   display: block;
   text-decoration: none;
-  color: #0e172c;
+  color: #ffffff;
   transition: 1.5s;
   letter-spacing: 5px;
 }
